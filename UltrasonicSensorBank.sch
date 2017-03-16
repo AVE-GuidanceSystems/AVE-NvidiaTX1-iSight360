@@ -257,7 +257,17 @@ Wire Wire Line
 Wire Wire Line
 	2900 4900 2900 5400
 Wire Wire Line
-	2900 5400 6350 5400
+	2900 5400 3550 5400
+Wire Wire Line
+	3550 5400 4150 5400
+Wire Wire Line
+	4150 5400 4750 5400
+Wire Wire Line
+	4750 5400 5350 5400
+Wire Wire Line
+	5350 5400 5950 5400
+Wire Wire Line
+	5950 5400 6350 5400
 Wire Wire Line
 	3450 4900 3550 4900
 Wire Wire Line
@@ -337,7 +347,9 @@ F 3 "" H 10300 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10250 2250 10550 2250
+	10250 2250 10300 2250
+Wire Wire Line
+	10300 2250 10550 2250
 Wire Wire Line
 	10300 2250 10300 2600
 $Comp
@@ -371,7 +383,7 @@ Wire Notes Line
 Wire Notes Line
 	6400 3500 6400 6100
 Wire Notes Line
-	6400 6100 1550 6100
+	6400 6100 1300 6100
 Wire Notes Line
 	1300 6100 1300 3500
 Text Notes 3200 6000 0    49   ~ 0
@@ -440,7 +452,9 @@ Wire Wire Line
 	2250 1900 2250 4100
 Connection ~ 2250 4100
 Wire Wire Line
-	2250 4100 3350 4100
+	2250 4100 2700 4100
+Wire Wire Line
+	2700 4100 3350 4100
 Text Notes 1350 2000 0    28   ~ 0
 Bidirectional Level Shifter
 Wire Wire Line
