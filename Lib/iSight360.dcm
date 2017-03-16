@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS54231DR
+D IC REG BUCK ADJ 2A 8SOIC
+K BUCK SMPS
+$ENDCMP
+#
+#End Doc Library
