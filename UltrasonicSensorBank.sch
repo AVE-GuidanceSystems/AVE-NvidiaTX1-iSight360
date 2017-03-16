@@ -44,4 +44,417 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L 74LS251 U?
+U 1 1 58CA7FF4
+P 8700 2750
+F 0 "U?" H 8700 2750 50  0000 C CNN
+F 1 "74LS251" H 8700 2600 50  0000 C CNN
+F 2 "" H 8700 2750 50  0000 C CNN
+F 3 "" H 8700 2750 50  0000 C CNN
+	1    8700 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9400 2350
+$Comp
+L GND #PWR?
+U 1 1 58CA806F
+P 7800 3800
+F 0 "#PWR?" H 7800 3550 50  0001 C CNN
+F 1 "GND" H 7800 3650 50  0000 C CNN
+F 2 "" H 7800 3800 50  0000 C CNN
+F 3 "" H 7800 3800 50  0000 C CNN
+	1    7800 3800
+	1    0    0    -1  
+$EndComp
+Text Label 7200 2100 0    49   ~ 0
+Echo1
+Text Label 7200 2200 0    49   ~ 0
+Echo2
+Text Label 7200 2300 0    49   ~ 0
+Echo3
+Text Label 7200 2400 0    49   ~ 0
+Echo4
+Text Label 7200 2500 0    49   ~ 0
+Echo5
+Text Label 7200 2600 0    49   ~ 0
+Echo6
+NoConn ~ 6900 2700
+NoConn ~ 6900 2800
+$Comp
+L CONN_01X04 P?
+U 1 1 58CA8227
+P 2650 5100
+F 0 "P?" H 2650 5350 50  0000 C CNN
+F 1 "Ultrasonic 1" V 2750 5100 50  0000 C CNN
+F 2 "" H 2650 5100 50  0000 C CNN
+F 3 "" H 2650 5100 50  0000 C CNN
+	1    2650 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58CA8278
+P 3300 5100
+F 0 "P?" H 3300 5350 50  0000 C CNN
+F 1 "Ultrasonic2" V 3400 5100 50  0000 C CNN
+F 2 "" H 3300 5100 50  0000 C CNN
+F 3 "" H 3300 5100 50  0000 C CNN
+	1    3300 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58CA8298
+P 3900 5100
+F 0 "P?" H 3900 5350 50  0000 C CNN
+F 1 "Ultrasonic3" V 4000 5100 50  0000 C CNN
+F 2 "" H 3900 5100 50  0000 C CNN
+F 3 "" H 3900 5100 50  0000 C CNN
+	1    3900 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58CA82BB
+P 4500 5100
+F 0 "P?" H 4500 5350 50  0000 C CNN
+F 1 "Ultrasonic4" V 4600 5100 50  0000 C CNN
+F 2 "" H 4500 5100 50  0000 C CNN
+F 3 "" H 4500 5100 50  0000 C CNN
+	1    4500 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58CA82E1
+P 5100 5100
+F 0 "P?" H 5100 5350 50  0000 C CNN
+F 1 "Ultrasonic5" V 5200 5100 50  0000 C CNN
+F 2 "" H 5100 5100 50  0000 C CNN
+F 3 "" H 5100 5100 50  0000 C CNN
+	1    5100 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58CA830A
+P 5700 5100
+F 0 "P?" H 5700 5350 50  0000 C CNN
+F 1 "Ultrasonic6" V 5800 5100 50  0000 C CNN
+F 2 "" H 5700 5100 50  0000 C CNN
+F 3 "" H 5700 5100 50  0000 C CNN
+	1    5700 5100
+	0    -1   1    0   
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CA87C1
+P 2500 4900
+F 0 "#PWR?" H 2500 4750 50  0001 C CNN
+F 1 "+5F" H 2500 5040 50  0000 C CNN
+F 2 "" H 2500 4900 50  0000 C CNN
+F 3 "" H 2500 4900 50  0000 C CNN
+	1    2500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CA87EA
+P 3150 4900
+F 0 "#PWR?" H 3150 4750 50  0001 C CNN
+F 1 "+5F" H 3150 5040 50  0000 C CNN
+F 2 "" H 3150 4900 50  0000 C CNN
+F 3 "" H 3150 4900 50  0000 C CNN
+	1    3150 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CA8813
+P 3750 4900
+F 0 "#PWR?" H 3750 4750 50  0001 C CNN
+F 1 "+5F" H 3750 5040 50  0000 C CNN
+F 2 "" H 3750 4900 50  0000 C CNN
+F 3 "" H 3750 4900 50  0000 C CNN
+	1    3750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CA883C
+P 4350 4900
+F 0 "#PWR?" H 4350 4750 50  0001 C CNN
+F 1 "+5F" H 4350 5040 50  0000 C CNN
+F 2 "" H 4350 4900 50  0000 C CNN
+F 3 "" H 4350 4900 50  0000 C CNN
+	1    4350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CA8865
+P 4950 4900
+F 0 "#PWR?" H 4950 4750 50  0001 C CNN
+F 1 "+5F" H 4950 5040 50  0000 C CNN
+F 2 "" H 4950 4900 50  0000 C CNN
+F 3 "" H 4950 4900 50  0000 C CNN
+	1    4950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CA888E
+P 5550 4900
+F 0 "#PWR?" H 5550 4750 50  0001 C CNN
+F 1 "+5F" H 5550 5040 50  0000 C CNN
+F 2 "" H 5550 4900 50  0000 C CNN
+F 3 "" H 5550 4900 50  0000 C CNN
+	1    5550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58CA88B7
+P 6350 5400
+F 0 "#PWR?" H 6350 5150 50  0001 C CNN
+F 1 "GND" H 6350 5250 50  0000 C CNN
+F 2 "" H 6350 5400 50  0000 C CNN
+F 3 "" H 6350 5400 50  0000 C CNN
+	1    6350 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3800 7800 3400
+Wire Wire Line
+	7800 3400 8000 3400
+Wire Wire Line
+	8000 3000 6900 3000
+Wire Wire Line
+	8000 3100 6900 3100
+Wire Wire Line
+	8000 3200 6900 3200
+Wire Wire Line
+	2600 2100 8000 2100
+Wire Wire Line
+	3250 2200 8000 2200
+Wire Wire Line
+	3850 2300 8000 2300
+Wire Wire Line
+	4450 2400 8000 2400
+Wire Wire Line
+	5050 2500 8000 2500
+Wire Wire Line
+	5650 2600 8000 2600
+Wire Wire Line
+	8000 2700 6900 2700
+Wire Wire Line
+	8000 2800 6900 2800
+Wire Wire Line
+	9400 2250 10050 2250
+Wire Wire Line
+	2800 4900 2900 4900
+Wire Wire Line
+	2900 4900 2900 5400
+Wire Wire Line
+	2900 5400 6350 5400
+Wire Wire Line
+	3450 4900 3550 4900
+Wire Wire Line
+	3550 4900 3550 5400
+Connection ~ 3550 5400
+Wire Wire Line
+	4050 4900 4150 4900
+Wire Wire Line
+	4150 4900 4150 5400
+Connection ~ 4150 5400
+Wire Wire Line
+	4650 4900 4750 4900
+Wire Wire Line
+	4750 4900 4750 5400
+Connection ~ 4750 5400
+Wire Wire Line
+	5250 4900 5350 4900
+Wire Wire Line
+	5350 4900 5350 5400
+Connection ~ 5350 5400
+Wire Wire Line
+	5850 4900 5950 4900
+Wire Wire Line
+	5950 4900 5950 5400
+Connection ~ 5950 5400
+Wire Wire Line
+	5750 4100 5750 4900
+Wire Wire Line
+	5150 4900 5150 4100
+Connection ~ 5150 4100
+Wire Wire Line
+	4550 4900 4550 4100
+Connection ~ 4550 4100
+Wire Wire Line
+	3950 4900 3950 4100
+Connection ~ 3950 4100
+Wire Wire Line
+	3350 4100 3350 4900
+Connection ~ 3350 4100
+Wire Wire Line
+	2700 4100 2700 4900
+Connection ~ 2700 4100
+Text Label 2200 3650 3    49   ~ 0
+Trigger
+Wire Wire Line
+	2600 4900 2600 2100
+Wire Wire Line
+	3250 4900 3250 2200
+Wire Wire Line
+	3850 4900 3850 2300
+Wire Wire Line
+	4450 4900 4450 2400
+Wire Wire Line
+	5050 4900 5050 2500
+Wire Wire Line
+	5650 4900 5650 2600
+$Comp
+L R_Small R?
+U 1 1 58CA9026
+P 10150 2250
+F 0 "R?" H 10200 2350 50  0000 L CNN
+F 1 "550k" H 10180 2210 50  0000 L CNN
+F 2 "" H 10150 2250 50  0000 C CNN
+F 3 "" H 10150 2250 50  0000 C CNN
+	1    10150 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58CA904B
+P 10300 2700
+F 0 "R?" H 10330 2720 50  0000 L CNN
+F 1 "330k" H 10330 2660 50  0000 L CNN
+F 2 "" H 10300 2700 50  0000 C CNN
+F 3 "" H 10300 2700 50  0000 C CNN
+	1    10300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2250 10550 2250
+Wire Wire Line
+	10300 2250 10300 2600
+$Comp
+L GND #PWR?
+U 1 1 58CA91AC
+P 10300 2950
+F 0 "#PWR?" H 10300 2700 50  0001 C CNN
+F 1 "GND" H 10300 2800 50  0000 C CNN
+F 2 "" H 10300 2950 50  0000 C CNN
+F 3 "" H 10300 2950 50  0000 C CNN
+	1    10300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2800 10300 2950
+Connection ~ 10300 2250
+Text HLabel 10550 2250 2    49   Output ~ 0
+Echo
+Wire Notes Line
+	9700 1650 9700 3350
+Wire Notes Line
+	9700 3350 10950 3350
+Wire Notes Line
+	10950 3350 10950 1650
+Wire Notes Line
+	10950 1650 9700 1650
+Text Notes 9850 1650 0    49   ~ 0
+Divider to protect SoC pin
+Wire Notes Line
+	1300 3500 6400 3500
+Wire Notes Line
+	6400 3500 6400 6100
+Wire Notes Line
+	6400 6100 1550 6100
+Wire Notes Line
+	1300 6100 1300 3500
+Text Notes 3200 6000 0    49   ~ 0
+Sensor Bank with Power, Ground and Trigger pins
+Text HLabel 6900 3000 0    49   Input ~ 0
+TriggerPin4
+Text HLabel 6900 3100 0    49   Input ~ 0
+TriggerPin5
+Text HLabel 6900 3200 0    49   Input ~ 0
+TriggerPin6
+Text HLabel 1100 1900 0    49   Input ~ 0
+TriggerPin7
+$Comp
+L 74LVC1T45 U?
+U 1 1 58CA9990
+P 1100 1600
+F 0 "U?" H 1350 1050 49  0000 C CNN
+F 1 "74LVC1T45" H 1650 1800 49  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 1650 1050 49  0001 C CNN
+F 3 "http://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 1650 1050 49  0001 C CNN
+	1    1100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V2 #PWR?
+U 1 1 58CA9A12
+P 1100 1350
+F 0 "#PWR?" H 1100 1200 50  0001 C CNN
+F 1 "+1V2" H 1100 1490 50  0000 C CNN
+F 2 "" H 1100 1350 50  0000 C CNN
+F 3 "" H 1100 1350 50  0000 C CNN
+	1    1100 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1350 1100 1600
+Wire Wire Line
+	600  1750 1100 1750
+Wire Wire Line
+	600  1750 600  2300
+$Comp
+L GND #PWR?
+U 1 1 58CA9AE6
+P 600 2300
+F 0 "#PWR?" H 600 2050 50  0001 C CNN
+F 1 "GND" H 600 2150 50  0000 C CNN
+F 2 "" H 600 2300 50  0000 C CNN
+F 3 "" H 600 2300 50  0000 C CNN
+	1    600  2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CA9B65
+P 2200 1400
+F 0 "#PWR?" H 2200 1250 50  0001 C CNN
+F 1 "+5F" H 2200 1540 50  0000 C CNN
+F 2 "" H 2200 1400 50  0000 C CNN
+F 3 "" H 2200 1400 50  0000 C CNN
+	1    2200 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1400 2200 1600
+Wire Wire Line
+	2250 1900 2250 4100
+Connection ~ 2250 4100
+Wire Wire Line
+	2250 4100 3350 4100
+Text Notes 1350 2000 0    28   ~ 0
+Bidirectional Level Shifter
+Wire Wire Line
+	2250 1750 2700 1750
+Wire Wire Line
+	2700 1750 2700 1000
+Wire Wire Line
+	2700 1000 800  1000
+Wire Wire Line
+	800  1000 800  1600
+Wire Wire Line
+	800  1600 1100 1600
+Text Notes 1350 1000 0    28   ~ 0
+Set Vcc(a) "HIGH" for A->B Transmission
+Text HLabel 2200 1400 2    49   Input ~ 0
+5V
 $EndSCHEMATC

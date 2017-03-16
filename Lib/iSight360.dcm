@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74LVC1T45
+D Voltage Level Translator Bidirectional 1 Circuit 1 Channel 420Mbps 6-TSSOP
+K Level Translator Bidirectional
+$ENDCMP
+#
 $CMP TPS54231DR
 D IC REG BUCK ADJ 2A 8SOIC
 K BUCK SMPS

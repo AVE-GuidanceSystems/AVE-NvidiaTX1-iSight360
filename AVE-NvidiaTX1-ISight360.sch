@@ -49,9 +49,8 @@ S 1300 1050 2150 800
 U 58CA7067
 F0 "Power" 67
 F1 "Power.sch" 67
+F2 "5V" O R 3450 1300 67 
 $EndSheet
-Text HLabel 3450 1300 0    67   Output ~ 13
-5V
 $Sheet
 S 1800 2950 850  2700
 U 58CA7E0D
@@ -98,23 +97,7 @@ Text HLabel 7650 2000 2    67   Input ~ 13
 SDA
 Text HLabel 7650 2150 2    67   Input ~ 13
 SCL
-$Sheet
-S 7600 3900 1250 1350
-U 58CA7E2A
-F0 "UltrasonicSensorBank" 67
-F1 "UltrasonicSensorBank.sch" 67
-$EndSheet
-Text HLabel 7600 4050 2    67   Input ~ 13
-PinTrigger4
-Text HLabel 7600 4250 2    67   Input ~ 13
-PinTrigger5
-Text HLabel 7600 4450 2    67   Input ~ 13
-PinTrigger6
-Text HLabel 7600 4700 2    67   Input ~ 13
-Echo
 Text HLabel 8800 1400 0    67   Input ~ 13
-5V
-Text HLabel 8850 4050 0    67   Input ~ 13
 5V
 Wire Wire Line
 	2650 3200 5000 3200
@@ -177,14 +160,14 @@ Wire Wire Line
 Wire Wire Line
 	4100 750  9350 750 
 Wire Wire Line
-	9350 750  9350 4050
+	9350 750  9350 1400
+Wire Wire Line
+	9350 1400 9350 4050
 Wire Wire Line
 	9350 1400 8800 1400
 Wire Wire Line
 	9350 4050 8850 4050
 Connection ~ 9350 1400
-Text HLabel 7600 4900 2    67   Input ~ 13
-PinTrigger7
 Wire Wire Line
 	2650 4900 7600 4900
 Text Label 3750 4650 2    67   ~ 13
@@ -199,4 +182,16 @@ Text Label 6150 3050 1    67   ~ 13
 SDA
 Text Label 6500 3100 1    67   ~ 13
 SCL
+$Sheet
+S 7600 3900 1250 1350
+U 58CA7E2A
+F0 "UltrasonicSensorBank" 67
+F1 "UltrasonicSensorBank.sch" 67
+F2 "Echo" O L 7600 4700 67 
+F3 "TriggerPin4" I L 7600 4050 67 
+F4 "TriggerPin5" I L 7600 4250 67 
+F5 "TriggerPin6" I L 7600 4450 67 
+F6 "TriggerPin7" I L 7600 4900 67 
+F7 "5V" I R 8850 4050 67 
+$EndSheet
 $EndSCHEMATC
