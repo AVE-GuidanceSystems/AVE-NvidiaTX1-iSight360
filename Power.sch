@@ -35,11 +35,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Power"
+Date "2017-03-16"
+Rev "A"
+Comp "Advanced Visual Electronics"
+Comment1 "Designer: Christian Aguilar"
 Comment2 ""
 Comment3 ""
 Comment4 ""

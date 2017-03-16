@@ -35,8 +35,8 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 5
-Title "iSight360 Power"
-Date "2017-03-15"
+Title "iSight360"
+Date "2017-03-16"
 Rev "A"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"
