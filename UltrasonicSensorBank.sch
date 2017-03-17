@@ -485,4 +485,6 @@ F 3 "" H 5550 4900 50  0000 C CNN
 	1    5550 4900
 	1    0    0    -1  
 $EndComp
+Text Notes 4900 1050 0    118  ~ 24
+Ultrasonic Sensor Bank
 $EndSCHEMATC
