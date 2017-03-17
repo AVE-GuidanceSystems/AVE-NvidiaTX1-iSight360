@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "Power"
-Date "2017-03-16"
+Date "2017-03-17"
 Rev "A"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"

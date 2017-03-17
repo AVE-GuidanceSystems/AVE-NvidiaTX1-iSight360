@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "Haptic Motor Bank"
-Date "2017-03-16"
+Date "2017-03-17"
 Rev "A"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"
@@ -45,33 +45,408 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74LS251 U?
-U 1 1 58CAE2D5
-P 6750 2850
-F 0 "U?" H 6750 2850 50  0000 C CNN
-F 1 "74LS251" H 6750 2700 50  0000 C CNN
-F 2 "" H 6750 2850 50  0000 C CNN
-F 3 "" H 6750 2850 50  0000 C CNN
-	1    6750 2850
+L CD4051B U?
+U 1 1 58CBB1C5
+P 3900 2550
+F 0 "U?" H 3150 1650 118 0000 C CNN
+F 1 "CD4051B" H 3900 3650 118 0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 3900 1800 118 0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4051b.pdf" H 3900 1800 118 0001 C CNN
+	1    3900 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 2200 6050 2200
-Wire Wire Line
-	3700 2200 3700 1900
-Wire Wire Line
-	6050 3500 5800 3500
-Wire Wire Line
-	5800 3500 5800 4150
+Text HLabel 2150 4500 2    49   Input ~ 10
+PinTrigger2
 $Comp
 L GND #PWR?
-U 1 1 58CAE30D
-P 5800 4150
-F 0 "#PWR?" H 5800 3900 50  0001 C CNN
-F 1 "GND" H 5800 4000 50  0000 C CNN
-F 2 "" H 5800 4150 50  0000 C CNN
-F 3 "" H 5800 4150 50  0000 C CNN
-	1    5800 4150
+U 1 1 58CBB229
+P 1750 1950
+F 0 "#PWR?" H 1750 1700 50  0001 C CNN
+F 1 "GND" H 1750 1800 50  0000 C CNN
+F 2 "" H 1750 1950 50  0000 C CNN
+F 3 "" H 1750 1950 50  0000 C CNN
+	1    1750 1950
 	1    0    0    -1  
 $EndComp
+Text HLabel 4250 1750 1    49   Input ~ 10
+5V
+NoConn ~ 3950 1750
+Text HLabel 2800 2200 0    49   Input ~ 10
+5V
+$Comp
+L CONN_01X04 P?
+U 1 1 58CBB27A
+P 10400 1100
+F 0 "P?" H 10400 1350 50  0000 C CNN
+F 1 "CONN_01X04" V 10500 1100 50  0000 C CNN
+F 2 "" H 10400 1100 50  0000 C CNN
+F 3 "" H 10400 1100 50  0000 C CNN
+	1    10400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58CBB2E4
+P 10400 2050
+F 0 "P?" H 10400 2300 50  0000 C CNN
+F 1 "CONN_01X04" V 10500 2050 50  0000 C CNN
+F 2 "" H 10400 2050 50  0000 C CNN
+F 3 "" H 10400 2050 50  0000 C CNN
+	1    10400 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 10750 1250 1    49   ~ 10
+Bus start
+Text Notes 10700 2250 1    49   ~ 10
+Bus end
+$Comp
+L GND #PWR?
+U 1 1 58CBB32B
+P 9500 2300
+F 0 "#PWR?" H 9500 2050 50  0001 C CNN
+F 1 "GND" H 9500 2150 50  0000 C CNN
+F 2 "" H 9500 2300 50  0000 C CNN
+F 3 "" H 9500 2300 50  0000 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+Text HLabel 10200 1900 1    49   Input ~ 10
+5V
+Text HLabel 10200 950  1    49   Input ~ 10
+5V
+Text HLabel 9500 1050 0    49   Input ~ 10
+SDA
+Text HLabel 9500 1150 0    49   Input ~ 10
+SCL
+$Comp
+L R_Small R?
+U 1 1 58CBB3A6
+P 9900 2000
+F 0 "R?" H 9930 2020 28  0000 L CNN
+F 1 "33" H 9950 1950 28  0000 L CNN
+F 2 "" H 9900 2000 50  0000 C CNN
+F 3 "" H 9900 2000 50  0000 C CNN
+	1    9900 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58CBB3EC
+P 9900 2100
+F 0 "R?" H 9800 2150 28  0000 L CNN
+F 1 "33" H 9800 2050 28  0000 L CNN
+F 2 "" H 9900 2100 50  0000 C CNN
+F 3 "" H 9900 2100 50  0000 C CNN
+	1    9900 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 58CBB615
+P 10500 3150
+F 0 "P?" H 10500 3250 50  0000 C CNN
+F 1 "Trigger1" V 10600 3150 50  0000 C CNN
+F 2 "" H 10500 3150 50  0000 C CNN
+F 3 "" H 10500 3150 50  0000 C CNN
+	1    10500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 58CBB65E
+P 10500 3600
+F 0 "P?" H 10500 3700 50  0000 C CNN
+F 1 "Trigger2" V 10600 3600 50  0000 C CNN
+F 2 "" H 10500 3600 50  0000 C CNN
+F 3 "" H 10500 3600 50  0000 C CNN
+	1    10500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 58CBB688
+P 10500 4000
+F 0 "P?" H 10500 4100 50  0000 C CNN
+F 1 "Trigger3" V 10600 4000 50  0000 C CNN
+F 2 "" H 10500 4000 50  0000 C CNN
+F 3 "" H 10500 4000 50  0000 C CNN
+	1    10500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 58CBB6B5
+P 10500 4400
+F 0 "P?" H 10500 4500 50  0000 C CNN
+F 1 "Trigger4" V 10600 4400 50  0000 C CNN
+F 2 "" H 10500 4400 50  0000 C CNN
+F 3 "" H 10500 4400 50  0000 C CNN
+	1    10500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 58CBB6E5
+P 10500 4850
+F 0 "P?" H 10500 4950 50  0000 C CNN
+F 1 "Trigger5" V 10600 4850 50  0000 C CNN
+F 2 "" H 10500 4850 50  0000 C CNN
+F 3 "" H 10500 4850 50  0000 C CNN
+	1    10500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 58CBB718
+P 10500 5350
+F 0 "P?" H 10500 5450 50  0000 C CNN
+F 1 "Trigger6" V 10600 5350 50  0000 C CNN
+F 2 "" H 10500 5350 50  0000 C CNN
+F 3 "" H 10500 5350 50  0000 C CNN
+	1    10500 5350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4950 2950
+NoConn ~ 4950 3100
+$Comp
+L 74LVC1T45 U?
+U 1 1 58CBBEF2
+P 1000 4200
+F 0 "U?" H 1250 3650 49  0000 C CNN
+F 1 "74LVC1T45" H 1550 4400 49  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 1550 3650 49  0001 C CNN
+F 3 "http://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 1550 3650 49  0001 C CNN
+	1    1000 4200
+	1    0    0    -1  
+$EndComp
+Text HLabel 1000 4200 0    60   Input ~ 0
+5V
+$Comp
+L +1V2 #PWR?
+U 1 1 58CBBEFA
+P 2150 4200
+F 0 "#PWR?" H 2150 4050 50  0001 C CNN
+F 1 "+1V2" H 2150 4340 50  0000 C CNN
+F 2 "" H 2150 4200 50  0000 C CNN
+F 3 "" H 2150 4200 50  0000 C CNN
+	1    2150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58CBBF07
+P 900 5100
+F 0 "#PWR?" H 900 4850 50  0001 C CNN
+F 1 "GND" H 900 4950 50  0000 C CNN
+F 2 "" H 900 5100 50  0000 C CNN
+F 3 "" H 900 5100 50  0000 C CNN
+	1    900  5100
+	1    0    0    -1  
+$EndComp
+Text HLabel 4400 4450 2    49   Input ~ 10
+PinTrigger3
+$Comp
+L 74LVC1T45 U?
+U 1 1 58CBC250
+P 3250 4150
+F 0 "U?" H 3500 3600 49  0000 C CNN
+F 1 "74LVC1T45" H 3800 4350 49  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 3800 3600 49  0001 C CNN
+F 3 "http://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 3800 3600 49  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Text HLabel 3250 4150 0    60   Input ~ 0
+5V
+$Comp
+L +1V2 #PWR?
+U 1 1 58CBC258
+P 4400 4150
+F 0 "#PWR?" H 4400 4000 50  0001 C CNN
+F 1 "+1V2" H 4400 4290 50  0000 C CNN
+F 2 "" H 4400 4150 50  0000 C CNN
+F 3 "" H 4400 4150 50  0000 C CNN
+	1    4400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58CBC25E
+P 3150 5050
+F 0 "#PWR?" H 3150 4800 50  0001 C CNN
+F 1 "GND" H 3150 4900 50  0000 C CNN
+F 2 "" H 3150 5050 50  0000 C CNN
+F 3 "" H 3150 5050 50  0000 C CNN
+	1    3150 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 2150 6300 2    49   Input ~ 10
+PinTrigger1
+$Comp
+L 74LVC1T45 U?
+U 1 1 58CBC382
+P 1000 6000
+F 0 "U?" H 1250 5450 49  0000 C CNN
+F 1 "74LVC1T45" H 1550 6200 49  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 1550 5450 49  0001 C CNN
+F 3 "http://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 1550 5450 49  0001 C CNN
+	1    1000 6000
+	1    0    0    -1  
+$EndComp
+Text HLabel 1000 6000 0    60   Input ~ 0
+5V
+$Comp
+L +1V2 #PWR?
+U 1 1 58CBC38A
+P 2150 6000
+F 0 "#PWR?" H 2150 5850 50  0001 C CNN
+F 1 "+1V2" H 2150 6140 50  0000 C CNN
+F 2 "" H 2150 6000 50  0000 C CNN
+F 3 "" H 2150 6000 50  0000 C CNN
+	1    2150 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58CBC390
+P 900 6900
+F 0 "#PWR?" H 900 6650 50  0001 C CNN
+F 1 "GND" H 900 6750 50  0000 C CNN
+F 2 "" H 900 6900 50  0000 C CNN
+F 3 "" H 900 6900 50  0000 C CNN
+	1    900  6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1750 1750 1750
+Wire Wire Line
+	1750 1750 1750 1950
+Wire Wire Line
+	10200 1250 9500 1250
+Wire Wire Line
+	9500 1250 9500 2000
+Wire Wire Line
+	9500 2000 9500 2100
+Wire Wire Line
+	9500 2100 9500 2200
+Wire Wire Line
+	9500 2200 9500 2300
+Wire Wire Line
+	10200 2200 9500 2200
+Connection ~ 9500 2200
+Wire Wire Line
+	10200 1050 9500 1050
+Wire Wire Line
+	10200 1150 9500 1150
+Wire Wire Line
+	10200 2100 10000 2100
+Wire Wire Line
+	10200 2000 10000 2000
+Wire Wire Line
+	9800 2000 9500 2000
+Connection ~ 9500 2000
+Wire Wire Line
+	9800 2100 9500 2100
+Connection ~ 9500 2100
+Wire Wire Line
+	10300 3150 7250 3150
+Wire Wire Line
+	7250 3150 7250 2050
+Wire Wire Line
+	7250 2050 4950 2050
+Wire Wire Line
+	4950 2200 7000 2200
+Wire Wire Line
+	7000 2200 7000 3600
+Wire Wire Line
+	7000 3600 10300 3600
+Wire Wire Line
+	10300 4000 6700 4000
+Wire Wire Line
+	6700 4000 6700 2350
+Wire Wire Line
+	6700 2350 4950 2350
+Wire Wire Line
+	4950 2500 6400 2500
+Wire Wire Line
+	6400 2500 6400 4400
+Wire Wire Line
+	6400 4400 10300 4400
+Wire Wire Line
+	10300 4850 6100 4850
+Wire Wire Line
+	6100 4850 6100 2650
+Wire Wire Line
+	6100 2650 4950 2650
+Wire Wire Line
+	4950 2800 5750 2800
+Wire Wire Line
+	5750 2800 5750 5350
+Wire Wire Line
+	5750 5350 10300 5350
+Wire Wire Line
+	1000 4350 900  4350
+Wire Wire Line
+	900  4350 900  5000
+Wire Wire Line
+	900  5000 900  5100
+Wire Wire Line
+	800  4500 1000 4500
+Wire Wire Line
+	2150 4350 2800 4350
+Wire Wire Line
+	2800 4350 2800 5000
+Wire Wire Line
+	2800 5000 900  5000
+Connection ~ 900  5000
+Wire Wire Line
+	3250 4300 3150 4300
+Wire Wire Line
+	3150 4300 3150 4950
+Wire Wire Line
+	3150 4950 3150 5050
+Wire Wire Line
+	2950 4450 3250 4450
+Wire Wire Line
+	4400 4300 5050 4300
+Wire Wire Line
+	5050 4300 5050 4950
+Wire Wire Line
+	5050 4950 3150 4950
+Connection ~ 3150 4950
+Wire Wire Line
+	1000 6150 900  6150
+Wire Wire Line
+	900  6150 900  6800
+Wire Wire Line
+	900  6800 900  6900
+Wire Wire Line
+	600  6300 1000 6300
+Wire Wire Line
+	2150 6150 2800 6150
+Wire Wire Line
+	2800 6150 2800 6800
+Wire Wire Line
+	2800 6800 900  6800
+Connection ~ 900  6800
+Wire Wire Line
+	2950 4450 2950 3350
+Wire Wire Line
+	2950 3350 2800 3350
+Wire Wire Line
+	2800 3350 2800 3100
+Wire Wire Line
+	800  4500 800  2950
+Wire Wire Line
+	800  2950 2800 2950
+Wire Wire Line
+	600  6300 600  2800
+Wire Wire Line
+	600  2800 2800 2800
+Text Notes 2600 5700 0    49   ~ 10
+Level Shifters -> Reverse Direction
+Text Notes 10850 4400 1    49   ~ 10
+Output Triggers
+Text Notes 5150 1000 0    118  ~ 24
+Haptic Motor Bank
 $EndSCHEMATC

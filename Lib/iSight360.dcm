@@ -5,6 +5,10 @@ D Voltage Level Translator Bidirectional 1 Circuit 1 Channel 420Mbps 6-TSSOP
 K Level Translator Bidirectional
 $ENDCMP
 #
+$CMP CD4051B
+D IC MUX/DEMUX 8X1 16SOIC
+$ENDCMP
+#
 $CMP TPS54231DR
 D IC REG BUCK ADJ 2A 8SOIC
 K BUCK SMPS

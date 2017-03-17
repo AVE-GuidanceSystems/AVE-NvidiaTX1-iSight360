@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "Ultrasonic Sensor Bank"
-Date "2017-03-16"
+Date "2017-03-17"
 Rev "A"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"
@@ -59,12 +59,12 @@ NoConn ~ 9400 2350
 $Comp
 L GND #PWR?
 U 1 1 58CA806F
-P 7800 3800
-F 0 "#PWR?" H 7800 3550 50  0001 C CNN
-F 1 "GND" H 7800 3650 50  0000 C CNN
-F 2 "" H 7800 3800 50  0000 C CNN
-F 3 "" H 7800 3800 50  0000 C CNN
-	1    7800 3800
+P 8400 3800
+F 0 "#PWR?" H 8400 3550 50  0001 C CNN
+F 1 "GND" H 8400 3650 50  0000 C CNN
+F 2 "" H 8400 3800 50  0000 C CNN
+F 3 "" H 8400 3800 50  0000 C CNN
+	1    8400 3800
 	1    0    0    -1  
 $EndComp
 Text Label 7200 2100 0    49   ~ 0
@@ -203,17 +203,6 @@ F 3 "" H 4950 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5F #PWR?
-U 1 1 58CA888E
-P 5550 4900
-F 0 "#PWR?" H 5550 4750 50  0001 C CNN
-F 1 "+5F" H 5550 5040 50  0000 C CNN
-F 2 "" H 5550 4900 50  0000 C CNN
-F 3 "" H 5550 4900 50  0000 C CNN
-	1    5550 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR?
 U 1 1 58CA88B7
 P 6350 5400
@@ -224,10 +213,6 @@ F 3 "" H 6350 5400 50  0000 C CNN
 	1    6350 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 3800 7800 3400
-Wire Wire Line
-	7800 3400 8000 3400
 Wire Wire Line
 	8000 3000 6900 3000
 Wire Wire Line
@@ -251,23 +236,11 @@ Wire Wire Line
 Wire Wire Line
 	8000 2800 6900 2800
 Wire Wire Line
-	9400 2250 10050 2250
-Wire Wire Line
 	2800 4900 2900 4900
 Wire Wire Line
 	2900 4900 2900 5400
 Wire Wire Line
-	2900 5400 3550 5400
-Wire Wire Line
-	3550 5400 4150 5400
-Wire Wire Line
-	4150 5400 4750 5400
-Wire Wire Line
-	4750 5400 5350 5400
-Wire Wire Line
-	5350 5400 5950 5400
-Wire Wire Line
-	5950 5400 6350 5400
+	2900 5400 6350 5400
 Wire Wire Line
 	3450 4900 3550 4900
 Wire Wire Line
@@ -324,60 +297,18 @@ Wire Wire Line
 	5050 4900 5050 2500
 Wire Wire Line
 	5650 4900 5650 2600
-$Comp
-L R_Small R?
-U 1 1 58CA9026
-P 10150 2250
-F 0 "R?" H 10200 2350 50  0000 L CNN
-F 1 "550k" H 10180 2210 50  0000 L CNN
-F 2 "" H 10150 2250 50  0000 C CNN
-F 3 "" H 10150 2250 50  0000 C CNN
-	1    10150 2250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R_Small R?
-U 1 1 58CA904B
-P 10300 2700
-F 0 "R?" H 10330 2720 50  0000 L CNN
-F 1 "330k" H 10330 2660 50  0000 L CNN
-F 2 "" H 10300 2700 50  0000 C CNN
-F 3 "" H 10300 2700 50  0000 C CNN
-	1    10300 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 2250 10300 2250
-Wire Wire Line
-	10300 2250 10550 2250
-Wire Wire Line
-	10300 2250 10300 2600
-$Comp
-L GND #PWR?
-U 1 1 58CA91AC
-P 10300 2950
-F 0 "#PWR?" H 10300 2700 50  0001 C CNN
-F 1 "GND" H 10300 2800 50  0000 C CNN
-F 2 "" H 10300 2950 50  0000 C CNN
-F 3 "" H 10300 2950 50  0000 C CNN
-	1    10300 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 2800 10300 2950
-Connection ~ 10300 2250
-Text HLabel 10550 2250 2    49   Output ~ 0
+Text HLabel 10850 2500 2    49   Output ~ 0
 Echo
 Wire Notes Line
-	9700 1650 9700 3350
+	9450 1650 9450 3350
 Wire Notes Line
-	9700 3350 10950 3350
+	9450 3350 11200 3350
 Wire Notes Line
-	10950 3350 10950 1650
+	11200 3350 11200 1650
 Wire Notes Line
-	10950 1650 9700 1650
+	11250 1650 9450 1650
 Text Notes 9850 1650 0    49   ~ 0
-Divider to protect SoC pin
+Voltage drop to protect SoC pin
 Wire Notes Line
 	1300 3500 6400 3500
 Wire Notes Line
@@ -452,9 +383,7 @@ Wire Wire Line
 	2250 1900 2250 4100
 Connection ~ 2250 4100
 Wire Wire Line
-	2250 4100 2700 4100
-Wire Wire Line
-	2700 4100 3350 4100
+	2250 4100 3350 4100
 Text Notes 1350 2000 0    28   ~ 0
 Bidirectional Level Shifter
 Wire Wire Line
@@ -471,4 +400,89 @@ Text Notes 1350 1000 0    28   ~ 0
 Set Vcc(a) "HIGH" for A->B Transmission
 Text HLabel 2200 1400 2    49   Input ~ 0
 5V
+$Comp
+L 74LVC1T45 U?
+U 1 1 58CB9594
+P 9700 2200
+F 0 "U?" H 9950 1650 49  0000 C CNN
+F 1 "74LVC1T45" H 10250 2400 49  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6_Handsoldering" H 10250 1650 49  0001 C CNN
+F 3 "http://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 10250 1650 49  0001 C CNN
+	1    9700 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 9700 2200 0    60   Input ~ 0
+5V
+$Comp
+L +1V2 #PWR?
+U 1 1 58CB97AB
+P 10850 2200
+F 0 "#PWR?" H 10850 2050 50  0001 C CNN
+F 1 "+1V2" H 10850 2340 50  0000 C CNN
+F 2 "" H 10850 2200 50  0000 C CNN
+F 3 "" H 10850 2200 50  0000 C CNN
+	1    10850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 2350 11050 2350
+Wire Wire Line
+	11050 2350 11050 1850
+Wire Wire Line
+	11050 1850 9700 1850
+Wire Wire Line
+	9700 1850 9700 2200
+Wire Wire Line
+	9700 2350 9600 2350
+Wire Wire Line
+	9600 2350 9600 3100
+Wire Wire Line
+	9400 2250 9500 2250
+Wire Wire Line
+	9500 2250 9500 2500
+Wire Wire Line
+	9500 2500 9700 2500
+$Comp
+L GND #PWR?
+U 1 1 58CB98DB
+P 9600 3100
+F 0 "#PWR?" H 9600 2850 50  0001 C CNN
+F 1 "GND" H 9600 2950 50  0000 C CNN
+F 2 "" H 9600 3100 50  0000 C CNN
+F 3 "" H 9600 3100 50  0000 C CNN
+	1    9600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3800 8400 3450
+Text HLabel 8000 3400 0    49   Input ~ 10
+5V
+Text HLabel 1650 4650 1    49   Input ~ 10
+5V
+Wire Wire Line
+	1650 4650 1650 4800
+Wire Wire Line
+	1650 4800 1800 4800
+$Comp
+L +5F #PWR?
+U 1 1 58CBDDCF
+P 1800 4800
+F 0 "#PWR?" H 1800 4650 50  0001 C CNN
+F 1 "+5F" H 1800 4940 50  0000 C CNN
+F 2 "" H 1800 4800 50  0000 C CNN
+F 3 "" H 1800 4800 50  0000 C CNN
+	1    1800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR?
+U 1 1 58CBDE3D
+P 5550 4900
+F 0 "#PWR?" H 5550 4750 50  0001 C CNN
+F 1 "+5F" H 5550 5040 50  0000 C CNN
+F 2 "" H 5550 4900 50  0000 C CNN
+F 3 "" H 5550 4900 50  0000 C CNN
+	1    5550 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

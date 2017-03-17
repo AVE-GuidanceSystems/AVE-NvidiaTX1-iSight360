@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "GPIO Breakout"
-Date "2017-03-16"
+Date "2017-03-17"
 Rev "A"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"
@@ -140,7 +140,7 @@ GPIO38
 Text Label 5300 3750 2    49   ~ 0
 GPIO37
 Text Label 5300 3850 2    49   ~ 0
-GPIO187
+GPIO184
 Text Label 4300 4450 2    49   ~ 0
 GPIO219
 Text Label 4300 4550 2    49   ~ 0
@@ -210,7 +210,7 @@ GPIO38
 Text HLabel 8400 3300 2    49   BiDi ~ 0
 GPIO37
 Text HLabel 8400 3500 2    49   BiDi ~ 0
-GPIO187
+GPIO184
 Text HLabel 8400 3700 2    49   BiDi ~ 0
 GPIO36
 Text HLabel 8400 3900 2    49   BiDi ~ 0
@@ -239,4 +239,22 @@ Text HLabel 8400 2150 2    49   BiDi ~ 0
 SDA
 Text Notes 6400 1150 2    118  ~ 24
 GPIO PINOUT
+Text Label 4000 3050 0    60   ~ 0
+3.3V
+Text Label 5050 3050 0    60   ~ 0
+5V
+Text Label 5050 3150 0    60   ~ 0
+5V
+Text Label 5050 3250 0    60   ~ 0
+GND
+Text Label 3850 3350 0    60   ~ 0
+Audio-MCLK
+Text Label 4000 3450 0    60   ~ 0
+GND
+Text Label 3900 3550 0    60   ~ 0
+UART-RST
+Text Label 4950 3350 0    60   ~ 0
+UART-TX
+Text Label 4950 3450 0    60   ~ 0
+UART-RX
 $EndSCHEMATC
