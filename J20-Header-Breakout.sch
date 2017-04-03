@@ -56,33 +56,31 @@ F 3 "" H 4650 3050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 3050 3850 3050
+	3300 3050 4400 3050
 Wire Wire Line
 	3600 3150 4400 3150
 Wire Wire Line
 	3450 3250 4400 3250
 Wire Wire Line
-	4400 3350 3850 3350
+	3450 3350 4400 3350
 Wire Wire Line
-	4400 3450 3850 3450
+	3200 3450 4400 3450
 Wire Wire Line
-	4400 3550 3850 3550
+	3450 3550 4400 3550
 Wire Wire Line
 	3050 3650 4400 3650
 Wire Wire Line
-	4400 3750 3850 3750
+	3450 3750 4400 3750
 Wire Wire Line
-	4400 3850 3850 3850
+	3450 3950 4400 3950
 Wire Wire Line
-	4400 3950 3850 3950
+	3450 4050 4400 4050
 Wire Wire Line
-	3850 4050 4400 4050
+	3450 4150 4400 4150
 Wire Wire Line
-	4400 4150 3850 4150
+	3200 4250 4400 4250
 Wire Wire Line
-	4400 4250 3850 4250
-Wire Wire Line
-	4400 4350 3850 4350
+	3450 4350 4400 4350
 Wire Wire Line
 	3050 4450 4400 4450
 Wire Wire Line
@@ -90,17 +88,17 @@ Wire Wire Line
 Wire Wire Line
 	3400 4650 4400 4650
 Wire Wire Line
-	4400 4750 3850 4750
+	3450 4750 4400 4750
 Wire Wire Line
 	3550 4850 4400 4850
 Wire Wire Line
-	4400 4950 3850 4950
+	3200 4950 4400 4950
 Wire Wire Line
 	5450 3050 4900 3050
 Wire Wire Line
 	5450 3150 4900 3150
 Wire Wire Line
-	5450 3250 4900 3250
+	4900 3250 6100 3250
 Wire Wire Line
 	5450 3350 4900 3350
 Wire Wire Line
@@ -108,13 +106,13 @@ Wire Wire Line
 Wire Wire Line
 	5450 3550 4900 3550
 Wire Wire Line
-	5450 3650 4900 3650
+	4900 3650 6100 3650
 Wire Wire Line
 	4900 3750 6300 3750
 Wire Wire Line
 	4900 3850 6500 3850
 Wire Wire Line
-	5450 3950 4900 3950
+	6100 3950 4900 3950
 Wire Wire Line
 	4900 4050 5450 4050
 Wire Wire Line
@@ -124,11 +122,11 @@ Wire Wire Line
 Wire Wire Line
 	5450 4350 4900 4350
 Wire Wire Line
-	5450 4450 4900 4450
+	6100 4450 4900 4450
 Wire Wire Line
 	4900 4550 6700 4550
 Wire Wire Line
-	5450 4650 4900 4650
+	6100 4650 4900 4650
 Wire Wire Line
 	5450 4750 4900 4750
 Wire Wire Line
@@ -136,21 +134,21 @@ Wire Wire Line
 Wire Wire Line
 	5450 4950 4900 4950
 Text Label 4150 3650 2    49   ~ 0
-GPIO38
-Text Label 5300 3750 2    49   ~ 0
-GPIO37
-Text Label 5300 3850 2    49   ~ 0
-GPIO184
-Text Label 4300 4450 2    49   ~ 0
-GPIO219
-Text Label 4300 4550 2    49   ~ 0
-GPIO186
-Text Label 4300 4650 2    49   ~ 0
-GPIO63
+GPIO38_Audio-IRQ
+Text Label 5750 3750 2    49   ~ 0
+GPIO37_DMIC-IN-DAT
+Text Label 5800 3850 2    49   ~ 0
+GPIO184_MDM-WAKEUP
+Text Label 4150 4450 2    49   ~ 0
+GPIO219_AUD-RST
+Text Label 4250 4550 2    49   ~ 0
+GPIO186_MOTION-INT
+Text Label 4250 4650 2    49   ~ 0
+GPIO63_AP-WAKE-BIT
 Text Label 4300 4850 2    49   ~ 0
-GPIO187
-Text Label 5400 4550 2    49   ~ 0
-GPIO36
+GPIO187_APROX-INT
+Text Label 5750 4550 2    49   ~ 0
+GPIO36_DMIC-IN-CLK
 Text Notes 5200 5250 2    49   ~ 0
 Jetson Dev Carrier J20 Header
 Wire Wire Line
@@ -239,22 +237,82 @@ Text HLabel 8400 2150 2    49   BiDi ~ 0
 SDA
 Text Notes 6400 1150 2    118  ~ 24
 GPIO PINOUT
-Text Label 4000 3050 0    60   ~ 0
+Text Label 4000 3050 0    49   ~ 0
 3.3V
-Text Label 5050 3050 0    60   ~ 0
+Text Label 5050 3050 0    49   ~ 0
 5V
-Text Label 5050 3150 0    60   ~ 0
+Text Label 5050 3150 0    49   ~ 0
 5V
-Text Label 5050 3250 0    60   ~ 0
+Text Label 5050 3250 0    49   ~ 0
 GND
-Text Label 3850 3350 0    60   ~ 0
-Audio-MCLK
-Text Label 4000 3450 0    60   ~ 0
+Text Label 3450 3350 0    49   ~ 0
+GPIO41_Audio-MCLK
+Text Label 4000 3450 0    49   ~ 0
 GND
-Text Label 3900 3550 0    60   ~ 0
-UART-RST
-Text Label 4950 3350 0    60   ~ 0
-UART-TX
-Text Label 4950 3450 0    60   ~ 0
-UART-RX
+Text Label 3450 3550 0    49   ~ 0
+GPIO33_UART1-RST
+Text Label 4950 3350 0    49   ~ 0
+GPIO#_UART-TX
+Text Label 4950 3450 0    49   ~ 0
+GPIO#_UART-RX
+Text Label 3450 3750 0    49   ~ 0
+GPIO-EXP-P17
+Text Label 3450 3950 0    49   ~ 0
+GPIO#_SPI1-MOSI
+Text Label 3450 4050 0    49   ~ 0
+GPIO#_SPI1-MISO
+Text Label 3450 4150 0    49   ~ 0
+GPIO#_SPI1-CLK
+Text Label 4000 4250 0    49   ~ 0
+GND
+Text Label 3450 4350 0    49   ~ 0
+GPIO#_I2C1-GP1-DAT
+Text Label 4000 3850 0    49   ~ 0
+3.3V
+Text Label 3450 4750 0    49   ~ 0
+GPIO#_I2S0-LRCLK
+Text Label 3850 4950 0    49   ~ 0
+GND
+Text Label 4950 3550 0    49   ~ 0
+GPRIO#_I2S0-SCLK
+Text Label 5050 3650 0    49   ~ 0
+GND
+Text Label 5050 3950 0    49   ~ 0
+GND
+Text Label 4950 4050 0    49   ~ 0
+GPIO-EXP-P16
+Text Label 4950 4150 0    49   ~ 0
+GPIO#_SPI1-CS0
+Text Label 4950 4250 0    49   ~ 0
+GPIO#_SPI1-CS1
+Text Label 4950 4350 0    49   ~ 0
+GPIO#_SPI1-GP1-CLK
+Text Label 5050 4450 0    49   ~ 0
+GND
+Text Label 5050 4650 0    49   ~ 0
+GND
+Text Label 4950 4750 0    49   ~ 0
+GPIO#_UART0-CTS
+Text Label 4950 4850 0    49   ~ 0
+GPIO#_I2S0-SDIN
+Text Label 4950 4950 0    49   ~ 0
+GPIO#_I2S0-SDOUT
+Wire Wire Line
+	6100 3250 6100 5100
+Connection ~ 6100 3650
+Connection ~ 6100 3950
+Connection ~ 6100 4450
+Wire Wire Line
+	3200 3450 3200 5100
+Connection ~ 3200 4250
+Wire Wire Line
+	3200 5100 6100 5100
+Connection ~ 6100 4650
+Connection ~ 3200 4950
+Wire Wire Line
+	5450 3150 5450 3050
+Wire Wire Line
+	3300 3850 4400 3850
+Wire Wire Line
+	3300 3850 3300 3050
 $EndSCHEMATC
