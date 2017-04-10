@@ -45,12 +45,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_02X20 P?
+L CONN_02X20 P301
 U 1 1 58CAB084
 P 4650 4000
-F 0 "P?" H 4650 5050 50  0000 C CNN
+F 0 "P301" H 4650 5050 50  0000 C CNN
 F 1 "CONN_02X20" V 4650 4000 50  0000 C CNN
-F 2 "" H 4650 3050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 4650 3050 50  0001 C CNN
 F 3 "" H 4650 3050 50  0000 C CNN
 	1    4650 4000
 	1    0    0    -1  
@@ -315,4 +315,25 @@ Wire Wire Line
 	3300 3850 4400 3850
 Wire Wire Line
 	3300 3850 3300 3050
+Text HLabel 5450 3050 2    60   Output ~ 0
+5V
+Text HLabel 3300 3050 0    60   Output ~ 0
+3.3V
+NoConn ~ 3450 3350
+NoConn ~ 3450 3550
+NoConn ~ 3450 3750
+NoConn ~ 3450 3950
+NoConn ~ 3450 4050
+NoConn ~ 3450 4150
+NoConn ~ 3450 4350
+NoConn ~ 5450 3350
+NoConn ~ 5450 3450
+NoConn ~ 5450 3550
+NoConn ~ 5450 4050
+NoConn ~ 5450 4150
+NoConn ~ 5450 4250
+NoConn ~ 5450 4350
+NoConn ~ 5450 4750
+NoConn ~ 5450 4850
+NoConn ~ 5450 4950
 $EndSCHEMATC

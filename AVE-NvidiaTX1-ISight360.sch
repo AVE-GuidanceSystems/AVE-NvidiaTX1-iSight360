@@ -66,6 +66,8 @@ F8 "GPIO219" B R 2650 5650 60
 F9 "SCL" B R 2650 6400 60 
 F10 "SDA" B R 2650 6200 60 
 F11 "GPIO184" B R 2650 5900 60 
+F12 "5V" O L 1800 4100 60 
+F13 "3.3V" O L 1800 4350 60 
 $EndSheet
 Text Notes 2200 6450 1    67   ~ 13
 I2C
@@ -140,7 +142,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2300 4100 2300
 Wire Wire Line
-	4100 2300 4100 1750
+	4100 1750 4100 3400
 Wire Wire Line
 	4100 1750 9350 1750
 Wire Wire Line
@@ -178,4 +180,11 @@ F7 "5V" I R 8850 5050 67
 $EndSheet
 Text Notes 4800 1100 0    118  ~ 24
 Top Level Design
+Wire Wire Line
+	1800 4100 1350 4100
+Wire Wire Line
+	1350 4100 1350 3400
+Wire Wire Line
+	1350 3400 4100 3400
+Connection ~ 4100 2300
 $EndSCHEMATC
