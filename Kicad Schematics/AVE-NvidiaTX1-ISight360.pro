@@ -1,4 +1,4 @@
-update=Wednesday, April 12, 2017 'PMt' 08:45:48 PM
+update=4/13/2017 1:42:55 AM
 version=1
 last_client=eeschema
 [general]
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=../../AVE-NvidiaTX1-iSight360
+LibDir=../../AVE-NvidiaTX1-iSight360;../Lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,6 +61,7 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/Users/christian/Cloud/Github/AVE-NvidiaTX1-iSight360/Lib/iSight360
+LibName31=Lib/iSight360
 [schematic_editor]
 version=1
 PageLayoutDescrFile=

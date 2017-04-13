@@ -78,7 +78,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4150 4400 4150
 Wire Wire Line
-	3200 4250 4400 4250
+	3350 4250 4400 4250
 Wire Wire Line
 	3450 4350 4400 4350
 Wire Wire Line
@@ -298,7 +298,7 @@ GPIO#_I2S0-SDIN
 Text Label 4950 4950 0    49   ~ 0
 GPIO#_I2S0-SDOUT
 Wire Wire Line
-	6100 3250 6100 5100
+	6100 5100 6100 3250
 Connection ~ 6100 3650
 Connection ~ 6100 3950
 Connection ~ 6100 4450
@@ -311,10 +311,6 @@ Connection ~ 6100 4650
 Connection ~ 3200 4950
 Wire Wire Line
 	5450 3150 5450 3050
-Wire Wire Line
-	3300 3850 4400 3850
-Wire Wire Line
-	3300 3850 3300 3050
 Text HLabel 5450 3050 2    60   Output ~ 0
 5V
 Text HLabel 3300 3050 0    60   Output ~ 0
@@ -337,4 +333,22 @@ NoConn ~ 5450 4750
 NoConn ~ 5450 4850
 NoConn ~ 5450 4950
 NoConn ~ 3450 4750
+NoConn ~ 3350 4250
+Wire Wire Line
+	3400 3850 4400 3850
+NoConn ~ 3400 3850
+$Comp
+L GND #PWR01
+U 1 1 58EF32BF
+P 5650 5150
+F 0 "#PWR01" H 5650 4900 50  0001 C CNN
+F 1 "GND" H 5650 5000 50  0000 C CNN
+F 2 "" H 5650 5150 50  0000 C CNN
+F 3 "" H 5650 5150 50  0000 C CNN
+	1    5650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5150 5650 5100
+Connection ~ 5650 5100
 $EndSCHEMATC
