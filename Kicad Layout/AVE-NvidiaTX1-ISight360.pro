@@ -1,6 +1,6 @@
-update=Wednesday, April 12, 2017 'PMt' 08:45:48 PM
+update=22/05/2015 07:44:53
 version=1
-last_client=eeschema
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=../../AVE-NvidiaTX1-iSight360
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -60,14 +60,3 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/Users/christian/Cloud/Github/AVE-NvidiaTX1-iSight360/Lib/iSight360
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=../PDFs/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=49

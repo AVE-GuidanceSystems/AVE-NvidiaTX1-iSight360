@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title "iSight360"
 Date "2017-03-17"
 Rev "A"
@@ -44,13 +44,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1300 2050 2150 800 
-U 58CA7067
-F0 "Power" 67
-F1 "Power.sch" 67
-F2 "5V" O R 3450 2300 67 
-$EndSheet
 $Sheet
 S 1800 3950 850  2700
 U 58CA7E0D
@@ -84,6 +77,7 @@ F4 "SDA" I L 7650 3000 60
 F5 "SCL" I L 7650 3150 60 
 F6 "PinTrigger3" I L 7650 2800 60 
 F7 "PinTrigger1" I L 7650 2400 60 
+F8 "3.3V" I R 8800 2950 49 
 $EndSheet
 Wire Wire Line
 	2650 4200 5000 4200
@@ -140,10 +134,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 5700 7600 5700
 Wire Wire Line
-	3450 2300 4100 2300
-Wire Wire Line
-	4100 1750 4100 3400
-Wire Wire Line
 	4100 1750 9350 1750
 Wire Wire Line
 	9350 1750 9350 5050
@@ -177,6 +167,7 @@ F4 "TriggerPin5" I L 7600 5250 67
 F5 "TriggerPin6" I L 7600 5450 67 
 F6 "TriggerPin7" I L 7600 5900 67 
 F7 "5V" I R 8850 5050 67 
+F8 "3.3V" I R 8850 5300 49 
 $EndSheet
 Text Notes 4800 1100 0    118  ~ 24
 Top Level Design
@@ -186,5 +177,19 @@ Wire Wire Line
 	1350 4100 1350 3400
 Wire Wire Line
 	1350 3400 4100 3400
-Connection ~ 4100 2300
+Wire Wire Line
+	1100 4350 1800 4350
+Wire Wire Line
+	4100 3400 4100 1750
+Wire Wire Line
+	1100 4350 1100 1550
+Wire Wire Line
+	1100 1550 9900 1550
+Wire Wire Line
+	9900 1550 9900 5300
+Wire Wire Line
+	9900 2950 8800 2950
+Wire Wire Line
+	9900 5300 8850 5300
+Connection ~ 9900 2950
 $EndSCHEMATC

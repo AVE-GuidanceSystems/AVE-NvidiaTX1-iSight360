@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 2 4
 Title "GPIO Breakout"
 Date "2017-03-17"
 Rev "A"
@@ -45,12 +45,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_02X20 P301
+L CONN_02X20 P201
 U 1 1 58CAB084
 P 4650 4000
-F 0 "P301" H 4650 5050 50  0000 C CNN
+F 0 "P201" H 4650 5050 50  0000 C CNN
 F 1 "CONN_02X20" V 4650 4000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 4650 3050 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x20_Pitch2.54mm" H 4650 3050 50  0001 C CNN
 F 3 "" H 4650 3050 50  0000 C CNN
 	1    4650 4000
 	1    0    0    -1  
@@ -336,4 +336,5 @@ NoConn ~ 5450 4350
 NoConn ~ 5450 4750
 NoConn ~ 5450 4850
 NoConn ~ 5450 4950
+NoConn ~ 3450 4750
 $EndSCHEMATC

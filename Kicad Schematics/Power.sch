@@ -55,17 +55,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps54231.pdf" H 5350 3350 60  0001 C CNN
 	1    5900 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X05 P201
-U 1 1 58CA7BF3
-P 2350 3250
-F 0 "P201" H 2350 3550 50  0000 C CNN
-F 1 "CONN_01X05" V 2450 3250 50  0000 C CNN
-F 2 "Connectors:JACK_ALIM" H 2350 3250 50  0001 C CNN
-F 3 "" H 2350 3250 50  0000 C CNN
-	1    2350 3250
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 3050 3350 3050
 Wire Wire Line
@@ -86,27 +75,21 @@ $EndComp
 $Comp
 L GND #PWR02
 U 1 1 58CA7C03
-P 2750 3850
-F 0 "#PWR02" H 2750 3600 50  0001 C CNN
-F 1 "GND" H 2750 3700 50  0000 C CNN
-F 2 "" H 2750 3850 50  0000 C CNN
-F 3 "" H 2750 3850 50  0000 C CNN
-	1    2750 3850
+P 2750 3500
+F 0 "#PWR02" H 2750 3250 50  0001 C CNN
+F 1 "GND" H 2750 3350 50  0000 C CNN
+F 2 "" H 2750 3500 50  0000 C CNN
+F 3 "" H 2750 3500 50  0000 C CNN
+	1    2750 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2550 3150 2750 3150
 Wire Wire Line
-	2750 3150 2750 3850
+	2750 3150 2750 3500
 Wire Wire Line
-	2550 3250 2750 3250
+	2750 3250 2550 3250
 Connection ~ 2750 3250
-Wire Wire Line
-	2550 3350 2750 3350
-Connection ~ 2750 3350
-Wire Wire Line
-	2550 3450 2750 3450
-Connection ~ 2750 3450
 $Comp
 L GND #PWR03
 U 1 1 58CA7C11
@@ -419,7 +402,7 @@ Connection ~ 7450 3700
 Wire Wire Line
 	5800 4000 5800 4250
 Connection ~ 8450 2600
-Text Notes 2300 4200 0    28   ~ 0
+Text Notes 2350 3800 0    28   ~ 0
 *Place holder until futher inspection
 Text Notes 5950 950  0    118  ~ 24
 Power
@@ -525,4 +508,15 @@ Wire Wire Line
 Text HLabel 3150 5900 1    49   Output ~ 0
 5V
 Connection ~ 3350 3050
+$Comp
+L BARREL_JACK CON201
+U 1 1 58EC872A
+P 2250 3150
+F 0 "CON201" H 2250 3400 50  0000 C CNN
+F 1 "BARREL_JACK" H 2250 2950 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 2250 3150 50  0001 C CNN
+F 3 "" H 2250 3150 50  0000 C CNN
+	1    2250 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
