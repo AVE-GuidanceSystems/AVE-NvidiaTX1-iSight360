@@ -1,0 +1,116 @@
+
+(rules PCB AVE-NvidiaTX1-ISight360
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2327)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 381.0)
+    (clear 381.2)
+    (clear 190.5 (type smd_to_turn_gap))
+    (clear 95.4 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:400_um-Large" "Via[0-1]_600:400_um" Large
+  )
+  (via 
+    "Via[0-1]_600:400_um-Small" "Via[0-1]_600:400_um" Small
+  )
+  (via_rule
+    default "Via[0-1]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (via_rule
+    Large "Via[0-1]_600:400_um-Large"
+  )
+  (via_rule
+    Small "Via[0-1]_600:400_um-Small"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 381.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "/HapticMotorBank/M-Power" "/UltrasonicSensorBank/U-Power" /SDA /SCL GND "/GPIO Breakout/GPIO41_Audio-MCLK" "/GPIO Breakout/GPIO#_UART-TX" "/GPIO Breakout/GPIO#_UART-RX"
+    "/GPIO Breakout/GPIO33_UART1-RST" "/GPIO Breakout/GPRIO#_I2S0-SCLK" "/GPIO Breakout/GPIO38" "/GPIO Breakout/GPIO-EXP-P17" "/GPIO Breakout/GPIO37" "/GPIO Breakout/Unused-3.3V" "/Sensor_Trigger" "/GPIO Breakout/GPIO#_SPI1-MOSI"
+    "/GPIO Breakout/GPIO#_SPI1-MISO" "/GPIO Breakout/GPIO-EXP-P16" "/GPIO Breakout/GPIO#_SPI1-CLK" "/GPIO Breakout/GPIO#_SPI1-CS0" "/GPIO Breakout/GPIO#_SPI1-CS1" "/GPIO Breakout/GPIO#_I2C1-GP1-DAT" "/GPIO Breakout/GPIO#_SPI1-GP1-CLK" "/Sensor_Input_Val"
+    "/GPIO Breakout/GPIO186" "/GPIO Breakout/GPIO36" "/GPIO Breakout/GPIO63" "/GPIO Breakout/GPIO#_I2S0-LRCLK" "/GPIO Breakout/GPIO#_UART0-CTS" "/GPIO Breakout/GPIO187" "/GPIO Breakout/GPIO#_I2S0-SDIN" "/GPIO Breakout/GPIO#_I2S0-SDOUT"
+    "/UltrasonicSensorBank/Ultrasonic_Trigger" /UltrasonicSensorBank/Echo1 /UltrasonicSensorBank/Echo2 /UltrasonicSensorBank/Echo3 /UltrasonicSensorBank/Echo4 /UltrasonicSensorBank/Echo5 /UltrasonicSensorBank/Echo6 "Net-(R401-Pad2)"
+    "Net-(R403-Pad2)" "Net-(U301-Pad1)" "Net-(U301-Pad2)" "Net-(U301-Pad4)" "Net-(U301-Pad12)" "Net-(U301-Pad5)" "Net-(U301-Pad13)" "Net-(U301-Pad6)"
+    "Net-(U301-Pad14)" "Net-(U301-Pad7)" "Net-(U301-Pad15)" "Net-(U401-Pad5)" "Net-(U401-Pad1)" "Net-(U402-Pad2)" "Net-(U402-Pad4)" "Net-(U402-Pad6)"
+    "Net-(U402-Pad7)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 381.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Large
+    "/GPIO Breakout/5V" "/GPIO Breakout/3.3V"
+    (clearance_class Large)
+    (via_rule Large)
+    (rule
+      (width 635.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Small
+    (clearance_class Small)
+    (via_rule Small)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

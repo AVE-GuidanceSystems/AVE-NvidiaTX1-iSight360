@@ -267,8 +267,8 @@ Text Label 4000 4250 0    49   ~ 0
 GND
 Text Label 3450 4350 0    49   ~ 0
 GPIO#_I2C1-GP1-DAT
-Text Label 4000 3850 0    49   ~ 0
-3.3V
+Text Label 3800 3850 0    49   ~ 0
+Unused-3.3V
 Text Label 3450 4750 0    49   ~ 0
 GPIO#_I2S0-LRCLK
 Text Label 3850 4950 0    49   ~ 0
@@ -298,7 +298,7 @@ GPIO#_I2S0-SDIN
 Text Label 4950 4950 0    49   ~ 0
 GPIO#_I2S0-SDOUT
 Wire Wire Line
-	6100 5100 6100 3250
+	6100 3250 6100 5100
 Connection ~ 6100 3650
 Connection ~ 6100 3950
 Connection ~ 6100 4450
