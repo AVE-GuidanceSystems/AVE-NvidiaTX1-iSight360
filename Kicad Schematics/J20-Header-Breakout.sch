@@ -32,12 +32,12 @@ LIBS:iSight360
 LIBS:AVE-NvidiaTX1-ISight360-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "GPIO Breakout"
-Date "2017-03-17"
-Rev "A"
+Date "2000-12-31"
+Rev "C"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"
 Comment2 ""

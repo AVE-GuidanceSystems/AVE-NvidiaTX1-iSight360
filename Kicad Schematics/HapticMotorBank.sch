@@ -32,12 +32,12 @@ LIBS:iSight360
 LIBS:AVE-NvidiaTX1-ISight360-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title "Haptic Motor Bank"
-Date "2017-03-17"
-Rev "A"
+Date "2000-12-31"
+Rev "C"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"
 Comment2 ""
@@ -291,7 +291,7 @@ F 3 "" H 9450 5850 50  0000 C CNN
 	1    9450 5850
 	1    0    0    -1  
 $EndComp
-Text HLabel 1950 5900 0    49   Input ~ 0
+Text HLabel 1050 5750 0    49   Input ~ 0
 5V
 Wire Wire Line
 	2800 2550 950  2550
@@ -305,27 +305,27 @@ NoConn ~ 2800 2200
 $Comp
 L Jumper_NC_Dual JP301
 U 1 1 58EEC921
-P 2500 6150
-F 0 "JP301" H 2550 6050 50  0000 L CNN
-F 1 "Motor Power Select" H 2500 6250 50  0000 C BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2500 6150 50  0001 C CNN
-F 3 "" H 2500 6150 50  0000 C CNN
-	1    2500 6150
+P 1600 6000
+F 0 "JP301" H 1650 5900 50  0000 L CNN
+F 1 "Motor Power Select" H 1600 6100 50  0000 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1600 6000 50  0001 C CNN
+F 3 "" H 1600 6000 50  0000 C CNN
+	1    1600 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 6150 1950 6150
+	1350 6000 1050 6000
 Wire Wire Line
-	1950 6150 1950 5900
+	1050 6000 1050 5750
 Wire Wire Line
-	2750 6150 3100 6150
+	1850 6000 2200 6000
 Wire Wire Line
-	3100 6150 3100 5900
-Text HLabel 3100 5900 2    49   Input ~ 0
+	2200 6000 2200 5750
+Text HLabel 2200 5750 2    49   Input ~ 0
 3.3V
 Wire Wire Line
-	2500 6250 2500 6650
-Text Label 2500 6650 1    49   ~ 0
+	1600 6100 1600 6500
+Text Label 1600 6500 1    49   ~ 0
 M-Power
 Wire Wire Line
 	8650 5750 9450 5750
@@ -369,6 +369,68 @@ Wire Wire Line
 	2350 1350 4250 1350
 Wire Wire Line
 	4250 1350 4250 1500
-Text Notes 2100 6800 0    49   ~ 0
+Text Notes 1200 6650 0    49   ~ 0
 Selectable Power Source
+Text Label 5400 1800 0    30   ~ 0
+Motor1_Trigger
+Text Label 5400 1950 0    30   ~ 0
+Motor2_Trigger
+Text Label 5400 2100 0    30   ~ 0
+Motor3_Trigger
+Text Label 5400 2250 0    30   ~ 0
+Motor4_Trigger
+Text Label 5400 2400 0    30   ~ 0
+Motor5_Trigger
+Text Label 5400 2550 0    30   ~ 0
+Motor6_Trigger
+Wire Wire Line
+	4700 5950 3500 5950
+Wire Wire Line
+	3500 6100 4700 6100
+Wire Wire Line
+	4700 6250 3500 6250
+Wire Wire Line
+	3500 6400 4700 6400
+Wire Wire Line
+	4700 6550 3500 6550
+Wire Wire Line
+	3500 6700 4700 6700
+Text Label 3950 5950 0    30   ~ 0
+Motor1_Trigger
+Text Label 3950 6100 0    30   ~ 0
+Motor2_Trigger
+Text Label 3950 6250 0    30   ~ 0
+Motor3_Trigger
+Text Label 3950 6400 0    30   ~ 0
+Motor4_Trigger
+Text Label 3950 6550 0    30   ~ 0
+Motor5_Trigger
+Text Label 3950 6700 0    30   ~ 0
+Motor6_Trigger
+Text HLabel 4700 5950 2    30   Output ~ 0
+Motor1Trig
+Text HLabel 4700 6100 2    30   Output ~ 0
+Motor2Trig
+Text HLabel 4700 6250 2    30   Output ~ 0
+Motor3Trig
+Text HLabel 4700 6400 2    30   Output ~ 0
+Motor4Trig
+Text HLabel 4700 6550 2    30   Output ~ 0
+Motor5Trig
+Text HLabel 4700 6700 2    30   Output ~ 0
+Motor6Trig
+Wire Notes Line
+	3150 5400 3150 7700
+Wire Notes Line
+	600  7700 5550 7700
+Wire Notes Line
+	5550 7700 5550 5400
+Wire Notes Line
+	5550 5400 600  5400
+Wire Notes Line
+	600  5400 600  7700
+Text Notes 2050 5550 2    67   ~ 0
+Power Select
+Text Notes 4800 5550 2    67   ~ 0
+Trigger Pass-Through
 $EndSCHEMATC

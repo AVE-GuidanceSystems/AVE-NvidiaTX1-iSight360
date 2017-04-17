@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2327)
+    (start_pass_no 4202)
     (layer_rule F.Cu
-      (active on)
-      (preferred_direction horizontal)
-      (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.0)
-    )
-    (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
     )
   )
   (rule
@@ -79,10 +79,10 @@
     "/GPIO Breakout/GPIO33_UART1-RST" "/GPIO Breakout/GPRIO#_I2S0-SCLK" "/GPIO Breakout/GPIO38" "/GPIO Breakout/GPIO-EXP-P17" "/GPIO Breakout/GPIO37" "/GPIO Breakout/Unused-3.3V" "/Sensor_Trigger" "/GPIO Breakout/GPIO#_SPI1-MOSI"
     "/GPIO Breakout/GPIO#_SPI1-MISO" "/GPIO Breakout/GPIO-EXP-P16" "/GPIO Breakout/GPIO#_SPI1-CLK" "/GPIO Breakout/GPIO#_SPI1-CS0" "/GPIO Breakout/GPIO#_SPI1-CS1" "/GPIO Breakout/GPIO#_I2C1-GP1-DAT" "/GPIO Breakout/GPIO#_SPI1-GP1-CLK" "/Sensor_Input_Val"
     "/GPIO Breakout/GPIO186" "/GPIO Breakout/GPIO36" "/GPIO Breakout/GPIO63" "/GPIO Breakout/GPIO#_I2S0-LRCLK" "/GPIO Breakout/GPIO#_UART0-CTS" "/GPIO Breakout/GPIO187" "/GPIO Breakout/GPIO#_I2S0-SDIN" "/GPIO Breakout/GPIO#_I2S0-SDOUT"
-    "/UltrasonicSensorBank/Ultrasonic_Trigger" /UltrasonicSensorBank/Echo1 /UltrasonicSensorBank/Echo2 /UltrasonicSensorBank/Echo3 /UltrasonicSensorBank/Echo4 /UltrasonicSensorBank/Echo5 /UltrasonicSensorBank/Echo6 "Net-(R401-Pad2)"
-    "Net-(R403-Pad2)" "Net-(U301-Pad1)" "Net-(U301-Pad2)" "Net-(U301-Pad4)" "Net-(U301-Pad12)" "Net-(U301-Pad5)" "Net-(U301-Pad13)" "Net-(U301-Pad6)"
-    "Net-(U301-Pad14)" "Net-(U301-Pad7)" "Net-(U301-Pad15)" "Net-(U401-Pad5)" "Net-(U401-Pad1)" "Net-(U402-Pad2)" "Net-(U402-Pad4)" "Net-(U402-Pad6)"
-    "Net-(U402-Pad7)"
+    "Net-(R401-Pad2)" "Net-(R403-Pad2)" "Net-(U301-Pad2)" "Net-(U301-Pad4)" "Net-(U301-Pad6)" "Net-(U301-Pad7)" "Net-(U401-Pad5)" "Net-(U401-Pad1)"
+    "Net-(U402-Pad2)" "Net-(U402-Pad4)" "Net-(U402-Pad6)" "Net-(U402-Pad7)" /UltrasonicTigger /Echo1 /Echo2 /Echo3
+    /Echo4 /Echo5 /Echo6 /Mtrigger5 /Mtrigger4 /Mtrigger6 /Mtrigger1 /Mtrigger2
+    /Mtrigger3 /UltrasonicTrigger
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

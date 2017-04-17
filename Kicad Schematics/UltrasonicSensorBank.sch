@@ -34,10 +34,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title "Ultrasonic Sensor Bank"
-Date "2017-03-17"
-Rev "A"
+Date "2000-12-31"
+Rev "C"
 Comp "Advanced Visual Electronics"
 Comment1 "Designer: Christian Aguilar"
 Comment2 ""
@@ -337,7 +337,7 @@ Wire Notes Line
 Wire Notes Line
 	6400 3500 6400 6100
 Wire Notes Line
-	6400 6100 1300 6100
+	6400 6100 850  6100
 Wire Notes Line
 	1300 6100 1300 3500
 Wire Wire Line
@@ -486,4 +486,52 @@ F 3 "" H 9000 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8300 1800
+Wire Wire Line
+	2500 6600 1300 6600
+Wire Wire Line
+	1300 6750 2500 6750
+Wire Wire Line
+	2500 6900 1300 6900
+Wire Wire Line
+	1300 7050 2500 7050
+Wire Wire Line
+	2500 7200 1300 7200
+Wire Wire Line
+	1300 7350 2500 7350
+Text Label 1750 6600 0    30   ~ 0
+Echo1
+Text Label 1750 6750 0    30   ~ 0
+Echo2
+Text Label 1750 6900 0    30   ~ 0
+Echo3
+Text Label 1750 7050 0    30   ~ 0
+Echo4
+Text Label 1750 7200 0    30   ~ 0
+Echo5
+Text Label 1750 7350 0    30   ~ 0
+Echo6
+Text HLabel 2500 6600 2    30   Output ~ 0
+UltrasonicEcho1
+Text HLabel 2500 6750 2    30   Output ~ 0
+UltrasonicEcho2
+Text HLabel 2500 6900 2    30   Output ~ 0
+UltrasonicEcho3
+Text HLabel 2500 7050 2    30   Output ~ 0
+UltrasonicEcho4
+Text HLabel 2500 7200 2    30   Output ~ 0
+UltrasonicEcho5
+Text HLabel 2500 7350 2    30   Output ~ 0
+UltrasonicEcho6
+Wire Notes Line
+	850  6100 850  7600
+Wire Notes Line
+	850  7600 4400 7600
+Wire Notes Line
+	4400 7600 4400 6100
+Text Notes 2800 6300 2    67   ~ 0
+Ultrasonic Sensor Breakouts
+Wire Wire Line
+	1300 7500 2450 7500
+Text Label 1750 7500 0    30   ~ 0
+Ultrasonic_Trigger
 $EndSCHEMATC
